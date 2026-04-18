@@ -1,0 +1,20 @@
+
+
+void process_input(int n)
+{
+    int d;
+    try
+    {
+        d = largest_proper_divisor(n);
+        cout << "result=" << d << endl;
+    }
+
+    catch (invalid_argument & ex)
+    {
+        cout << ex.what() << endl;
+    }
+
+    cout << "returning control flow to caller";
+}
+
+
